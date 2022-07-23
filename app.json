@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/aca_manage/aca_manage",
+    
+    
+    "pages/me/me",
+    "pages/space/publishSpace/publishSpace",
+    "pages/space/lookSpace/lookSpace",
+    "pages/space/space",
+    "pages/meeting/meeting",
+    "pages/teacher_info/teacher_info",
+    "pages/student_info/student_info",
+    "pages/jufe/jufe",
+    "pages/jufe_page/academic/academic",
+    "pages/jufe_page/lgrade/lgrade",
+    "pages/jufe_page/fgrade/fgrade",
+    "pages/jufe_page/apply/apply",
+    "pages/jufe_page/intention/intention",
+    "pages/add/add",
+    "pages/look/look",
+    "pages/delete/delete",
+    "pages/modify/modify"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "江财考研",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#d43c33",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "/static/images/tabs/tab-home.png",
+        "selectedIconPath": "/static/images/tabs/tab-home-current.png"
+      },
+      {
+        "pagePath": "pages/space/space",
+        "text": "社区",
+        "iconPath": "/static/images/tabs/select.png",
+        "selectedIconPath": "/static/images/tabs/selected.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "/static/images/tabs/tab-my.png",
+        "selectedIconPath": "/static/images/tabs/tab-my-current.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

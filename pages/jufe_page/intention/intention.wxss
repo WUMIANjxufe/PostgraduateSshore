@@ -1,0 +1,33 @@
+.section{
+  display: flex;
+  flex-direction: row;
+  margin:  20rpx  50rpx;
+  padding-left: 20rpx;
+  height: 70rpx;
+  line-height: 60rpx;
+  border:rgb(118, 231, 53) solid 1rpx ;
+  border-radius: 4rpx;
+}
+.section input{
+  /* display: flex; */
+  height: 70rpx;
+  line-height: 70rpx;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  border:rgb(118, 231, 53) solid 1rpx ;
+  
+  line-height: 80rpx;
+  height: 80rpx;
+  font-size: 40rpx;
+}
+.section view{
+  margin-right: 20rpx;
+}
+.btn-area{
+  margin: 20rpx;
+}
+button{
+  margin: 10rpx 0;
+}

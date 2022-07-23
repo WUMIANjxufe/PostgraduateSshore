@@ -1,0 +1,70 @@
+/* pages/jufe_page/lgrade/lgrade.wxss *//* pages/jufe_page/fgrade/fgrade.wxss */
+.section{
+  display: flex;
+  flex-direction: row;
+  margin:  20rpx  50rpx;
+  padding-left: 40rpx;
+  height: 70rpx;
+  line-height: 60rpx;
+  border:rgb(118, 231, 53) solid 1rpx ;
+  border-radius: 4rpx;
+}
+.section input{
+  /* display: flex; */
+  height: 70rpx;
+  line-height: 70rpx;
+}
+.section .radio{
+  margin-left: 30rpx;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  border:rgb(118, 231, 53) solid 1rpx ;
+  
+  line-height: 80rpx;
+  height: 80rpx;
+  font-size: 40rpx;
+}
+.section view{
+  margin-right: 20rpx;
+}
+
+/* 按钮 */
+.btn-area{
+  display: flex;
+  margin: 20rpx;
+  margin-top: 60rpx;
+}
+button{
+  /* margin: 10rpx 0; */
+  width: 240rpx !important;
+}
+
+/* 成绩样式 */
+.grade_title{
+  margin-left: 80rpx;
+  font-size: 35rpx;
+  
+}
+.row_wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 30rpx;
+}
+.s_wrapper{
+  display: flex;
+  flex-direction: row;
+}
+.s_wrapper input{
+
+  width: 100rpx;
+  border:rgb(118, 231, 53) solid 1rpx ;
+  margin-left: 20rpx;
+  /* 文字居中 */
+  text-align: center;
+}
+.radio{
+  margin-left: 40rpx;
+}

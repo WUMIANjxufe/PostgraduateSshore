@@ -1,0 +1,176 @@
+/* =====发表动态  弹出层====== */
+/* 设置显示的背景 */
+.pupContent {
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0 0 10rpx #333;
+  height: 0;
+  z-index: 999;
+}
+
+.showBG {
+  display: block;
+}
+
+.hideBG {
+  display: none;
+}
+
+/* 弹出或关闭动画来动态设置内容高度 */
+@keyframes slideBGtUp {
+  from {
+    background: transparent;
+  }
+
+  to {
+    background: rgba(0, 0, 0, 0.6);
+  }
+}
+
+@keyframes slideBGDown {
+  from {
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  to {
+    background: transparent;
+  }
+}
+
+/* 显示或关闭内容时动画 */
+.openBG {
+  animation: slideBGtUp 0.5s ease-in both;
+}
+
+.closeBG {
+  animation: slideBGDown 0.5s ease-in both;
+}
+
+/* 设置显示内容 */
+.showContent {
+  display: block;
+}
+
+.hideContent {
+  display: none;
+}
+
+/* 弹出或关闭动画来动态设置内容高度 */
+
+@keyframes slideContentUp {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 1100rpx;
+  }
+}
+
+@keyframes slideContentDown {
+  from {
+    height: 1100rpx;
+  }
+
+  to {
+    height: 0;
+  }
+}
+
+/* 显示或关闭内容时动画 */
+.open {
+  animation: slideContentUp 0.5s ease-in both;
+}
+
+.close {
+  animation: slideContentDown 0.5s ease-in both;
+}
+
+.textarea {
+  font-size: 32rpx;
+  width: auto;
+  background: #fbfbfb;
+  margin: 30rpx;
+  box-sizing: border-box;
+  padding: 20rpx;
+  margin-top: 60rpx;
+  height: 180rpx;
+}
+
+.bgTalkabout {
+  background: #fff;
+}
+
+.choosImg {
+  padding: 100rpx 30rpx 0;
+}
+
+.profList {
+  width: 140rpx;
+  height: 140rpx;
+  position: relative;
+  display: inline-block;
+  margin: 10rpx;
+}
+
+.profList .profImg {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.deleImg {
+  position: absolute;
+  right: 0;
+  top: -10%;
+  width: 38rpx;
+  height: 38rpx;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 38rpx
+}
+
+.addIMg {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.profListAdd {
+  background: #fbfbfb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profListAdd image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.profSubmit {
+  border-top: 1px solid #eaeaea;
+  display: inline-block;
+  padding: 20rpx 0 0;
+}
+
+.profSubmit button {
+  font-size: 32rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  background: rgb(13, 189, 145);
+  color: #fff;
+  float: right;
+  margin-right: 30rpx;
+}
+
+.profSubmit .button-hover {
+  background: rgb(103, 163, 148);
+}
+
+.fixedImg {
+  position: fixed;
+  bottom: 10%;
+  right: 6%;
+  width: 100rpx;
+  height: 100rpx;
+}

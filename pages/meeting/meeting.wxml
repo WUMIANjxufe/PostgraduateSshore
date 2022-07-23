@@ -1,0 +1,30 @@
+<!--pages/movieDetails/movieDetail.wxml-->
+<view>
+  <block wx:for="{{listData}}" wx:key="{[id]}">
+    <view class="container1">
+      <view>
+        <image src="{{item.url}}" class="container1-movie-imag" />
+      </view>
+      <view class="container1-movie-content">
+        <text>{{movie_name}}</text>
+        <text class="container1-movie-text">{{item.title}}宣讲会</text>
+        <text class="container1-movie-text">时间:{{item.time}}</text>
+        <text class="container1-movie-text">地点：{{item.address}}</text>
+        <view>
+          <view class="container1-option">
+            <view class="container1-option-border">
+              <image class="container1-option-image" src="/images/icon/wantSee.png" />
+              <text class="container1-option-text">参加</text>
+            </view>
+            <view class="container1-option-border">
+              <image class="container1-option-image" src="/images/icon/seeAlready.png" />
+              <text class="container1-option-text">忽略</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+  
+
+</view>

@@ -1,0 +1,3 @@
+
+<view> 朋友圈浏览</view>
+<view bindtap="publishSpace"> 朋友圈发布</view>

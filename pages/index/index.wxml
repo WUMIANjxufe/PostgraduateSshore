@@ -1,0 +1,65 @@
+<view class="indexContainer">
+  <!-- 轮播图区域 -->
+  <swiper class="banners" indicator-dots indicator-color='ivory' autoplay="true" interval="2000"
+    indicator-active-color='#d43c33' circular="true">
+    <swiper-item>
+      <image src="../../static/images/index/swiper_img/index01.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../static/images/index/swiper_img/index02.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../static/images/index/swiper_img/index03.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../static/images/index/swiper_img/index04.jpg"></image>
+    </swiper-item>
+  </swiper>
+
+  <!--导航区域 -->
+  <view class="nav_wrapper">
+    <view class="nav">
+      <view class="nav_st">
+        <view class="nav_s" bindtap="toStudent_info">校友管理</view>
+        <view class="nav_s" bindtap="toTeacher_info">导师管理</view>
+      </view>
+    </view>
+    <view class="nav">
+      <view class="nav_st">
+        <view class="nav_s" bindtap="toJufu">酱菜考研</view>
+        <view class="nav_s" bindtap="toMeeting">考研资讯</view>
+      </view>
+    </view>
+    <view class="nav">
+      <view class="nav_st">
+        <view class="nav_s">院校推荐</view>
+        <view class="nav_s" bindtap="toAca_manage">学院管理</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 优秀学子 -->
+  <view class="recommendContainer">
+    <!-- 头部区域 -->
+    <view class="header">
+      <text class="title">宣传展示</text>
+      <view>
+        <text>优秀学子风采</text>
+        <text class="more">查看更多</text>
+      </view>
+    </view>
+
+    <!-- 内容区 -->
+    <scroll-view class="recommendScroll" enable-flex scroll-x>
+      <view class="scrollItem" wx:for="{{studentInfo}}" wx:key="id" wx:for-item="studentInfo">
+        <image src="{{studentInfo.image}}"></image>
+        <text>{{studentInfo.name}}：{{studentInfo.university}}</text>
+      </view>
+    </scroll-view>
+
+  </view>
+
+
+
+
+</view>

@@ -1,0 +1,9 @@
+ 
+<view class="view-contain-ti">
+    <text class="text-ti">用户id</text>
+    <input class="input1" bindinput="bindinput"></input>
+</view>
+ <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="delete"> 删除用户 </button>
+ 
+<view wx:if="{{res==0}}">删除成功</view>

@@ -1,0 +1,84 @@
+<view class="big_wrapper">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section  header">
+      <view class="section__title">考研复试成绩</view>
+    </view>
+    <view class="section">
+      <view class="section__title">班级：</view>
+      <input name="classId" value="20教育技术学" placeholder="例如：20教育技术学" />
+    </view>
+    <view class="section">
+      <view class="section__title">学号：</view>
+      <input name="sId" value="820200xxx" placeholder="例如：820200xxx" />
+    </view>
+    <view class="section">
+      <view class="section__title">姓名：</view>
+      <input name="sName" value="麦小动" placeholder="麦小动" />
+    </view>
+
+    <view class="section ">
+      <view class="section__title">性别：</view>
+      <radio-group name="sSex">
+        <label>
+          <radio value="男" checked />男</label>
+        <label class="radio" class="radio">
+          <radio value="女" />女</label>
+      </radio-group>
+    </view>
+
+
+    <view class="section">
+      <view class="section__title">报考院校：</view>
+      <input name="sSchool" value="江西财经大学" placeholder="例如：江西财经大学" />
+    </view>
+    <view class="section">
+      <view class="section__title">报考专业：</view>
+      <input name="sMajor" value="电子信息" placeholder="例如：电子信息" />
+    </view>
+    
+
+    <view class="big-wrapper">
+      <view class="grade_title">复试成绩</view>
+      <view class="row_wrapper" >
+        <view class="s_wrapper">
+          <view>英语口语:</view>
+          <input name="englishoral" type="text" value="80"/>
+        </view>
+        <view class="s_wrapper">
+          <view>专业笔试:</view>
+          <input name="majorwitten" type="text" value="90"/>
+        </view>
+      </view>
+      <view class="row_wrapper">
+        <view class="s_wrapper">
+          <view>综合面试:</view>
+          <input name="cominterview" type="text" value="70"/>
+        </view>
+        <view class="s_wrapper">
+          <view>复试成绩:</view>
+          <input name="retestscore" type="text" value="60" />
+        </view>
+
+      </view>
+
+      <view class="row_wrapper">
+        <view class="s_wrapper">
+          <view>总成绩:</view>
+          <input name="totalscore" type="text" value="300"/>
+        </view>
+        <view class="s_wrapper">
+          <view>总排名:</view>
+          <input name="totalrank" type="text"  value="12"/>
+        </view>
+
+      </view>
+
+    </view>
+
+
+    <view class="btn-area">
+      <button formType="submit" type="primary">提交</button>
+      <button formType="reset" type="primary">重置</button>
+    </view>
+  </form>
+</view>

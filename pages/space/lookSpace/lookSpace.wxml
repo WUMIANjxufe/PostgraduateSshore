@@ -1,0 +1,27 @@
+<view class='pupContentBG {{click?"showBG":"hideBG"}}{{option?"openBG":"closeBG"}}' 
+  catchtap='clickPup' > </view>
+<view class='pupContent {{click? "showContent": "hideContent"}} {{option? "open": "close"}}' hover-stop-propagation='true'>
+  <view class="bgTalkabout"    >
+     <view class="profSubmit"> 
+       <button bindtap="profiSubmit">发表动态 </button>
+     </view> 
+     <textarea class="textarea" bindinput='textTapTalk' value='{{talkValue}}' placeholder-class="textClass" placeholder="发表你的感想"> </textarea>
+     <view class="choosImg">
+       <block wx:for="{{tempFilePaths}}" wx:key="{{index}}" wx:key="index">
+         <view class="profList">
+           <image class="profImg" src="{{item}}" bindtap="talkPreImg" data-index="{{index}}" mode="aspectFill"></image>
+           <image class="deleImg" bindtap="delImage" data-index="{{index}}" src="/yb_mingpian/static/images/red_img/cha@2x.png"> </image>
+         </view>
+       </block>
+       <view class="profList profListAdd "> 
+         <image class="addIMg" bindtap="choosImg" 
+         src="../../../images/space/add.png" mode="aspectFill"></image>
+         <!-- {{imgUrl}}/4/goods/441080e485fb0a31cdcfe58f99254c35.png -->
+       </view>
+     </view> 
+   </view>
+</view>
+<image src="../../../images/space/add.png"  class="fixedImg" bindtap="clickPup">
+</image>
+<!-- {{imgUrl}}/4/public/upload/bargain/c8ee99090ae7c4bb078af23139626dd1.png			 -->
+

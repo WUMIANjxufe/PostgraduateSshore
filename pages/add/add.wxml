@@ -1,0 +1,16 @@
+<view class="view-contain-ti">
+    <text class="text-ti">名字</text>
+    <input class="input1" bindinput="bindinput1"></input>
+</view>
+<view class="view-contain-ti">
+    <text class="text-ti">电话</text>
+    <input class="input1" bindinput="bindinput2"></input>
+</view>
+<view class="view-contain-ti">
+    <text class="text-ti">住址</text>
+    <input class="input1" bindinput="bindinput3"></input>
+</view>
+ <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="add"> 添加用户 </button>
+ 
+<view wx:if="{{res==0}}">添加成功</view>

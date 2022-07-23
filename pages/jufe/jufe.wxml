@@ -1,0 +1,35 @@
+<view class="indexContainer">
+  <!-- 轮播图区域 -->
+  <swiper class="banners" indicator-dots indicator-color='ivory' autoplay="true" interval="2000"
+    indicator-active-color='#d43c33' circular="true">
+    <swiper-item>
+      <image src="../../static/images/index/swiper_img/index01.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../static/images/index/swiper_img/index02.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../static/images/index/swiper_img/index03.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../static/images/index/swiper_img/index04.jpg"></image>
+    </swiper-item>
+  </swiper>
+
+  <!--导航区域 -->
+  <view class="nav_wrrpper">
+    <view class="nav_head">酱菜考研</view>
+    <view class="nav_content" bindtap="toIntention">考研意向</view>
+    <view class="nav_content" bindtap="toApply">正式报考</view>
+    <view class="nav_content" bindtap="toFgrade">初试成绩</view>
+    <view class="nav_content" bindtap="toLgrade">复试成绩</view>
+    <view class="nav_content" bindtap="toAcademic">录取院校</view>
+
+  </view>
+
+
+
+
+
+
+</view>
